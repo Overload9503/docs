@@ -15,6 +15,7 @@
     p { margin-bottom: 15px; }
     a { color: #0066cc; text-decoration: none; }
     a:hover { text-decoration: underline; }
+    .highlight-box { background-color: #f9f9f9; border-left: 4px solid #0066cc; padding: 15px; margin: 20px 0; }
   </style>
 </head>
 <body>
@@ -73,40 +74,49 @@
 
   <h2>6. Odbiorcy danych i transfer poza EOG</h2>
   <ul>
-    <li><strong>Supabase</strong> – backend, uwierzytelnianie, baza danych (możliwe centra danych poza EOG – standardowe klauzule UE).</li>
-    <li><strong>RevenueCat</strong> – subskrypcje w aplikacji (informacje o stanie subskrypcji, identyfikatory transakcji).</li>
-    <li><strong>Google</strong> – Google Play (dystrybucja), Google Sign‑In (logowanie), Google Mobile Ads (reklamy).</li>
-    <li><strong>Apple</strong> – Sign in with Apple (jeśli używasz na iOS w przyszłości).</li>
-    <li><strong>Sentry</strong> – raportowanie błędów (logi crashy, dane techniczne).</li>
+    <li><strong>Supabase</strong> – backend, uwierzytelnianie, baza danych.</li>
+    <li><strong>RevenueCat</strong> – obsługa subskrypcji.</li>
+    <li><strong>Google</strong> – Google Play, Google Sign‑In, Google Mobile Ads.</li>
+    <li><strong>Apple</strong> – Sign in with Apple.</li>
+    <li><strong>Sentry</strong> – raportowanie błędów.</li>
+    <li><strong>OpenAI</strong> – przetwarzanie obrazów kuponów (OCR).</li>
   </ul>
-  <p>Dane mogą być przekazywane poza EOG na podstawie odpowiednich mechanizmów prawnych (np. standardowe klauzule umowne UE). Stosujemy środki techniczne i organizacyjne zapewniające bezpieczeństwo danych.</p>
+  <p>Dane mogą być przekazywane poza EOG na podstawie odpowiednich mechanizmów prawnych (np. standardowe klauzule umowne UE).</p>
 
   <h2>7. Okres przechowywania</h2>
   <ul>
     <li>Dane konta i kupony – przez okres posiadania konta.</li>
-    <li>Dane rozliczeniowe – do 6 lat po usunięciu konta (w celu rozliczeń/roszczeń, jeżeli dotyczy).</li>
+    <li>Dane rozliczeniowe – do 6 lat po usunięciu konta (w celu rozliczeń/roszczeń).</li>
     <li>Dane techniczne/statystyczne – mogą być anonimizowane i przechowywane dłużej.</li>
   </ul>
 
   <h2>8. Twoje prawa</h2>
   <ul>
     <li>Dostęp do danych, sprostowanie, usunięcie, ograniczenie przetwarzania.</li>
-    <li>Przenoszenie danych, sprzeciw wobec przetwarzania na podstawie uzasadnionego interesu.</li>
-    <li>Wycofanie zgody (np. na personalizację reklam) w dowolnym momencie – nie wpływa na zgodność z prawem przetwarzania sprzed wycofania.</li>
+    <li>Przenoszenie danych, sprzeciw wobec przetwarzania.</li>
+    <li>Wycofanie zgody w dowolnym momencie.</li>
     <li>Skarga do organu nadzorczego (UODO w Polsce).</li>
   </ul>
 
   <h2>9. Usunięcie konta i danych</h2>
-  <p>Możesz zainicjować usunięcie konta i danych poprzez kontakt e‑mail: <a href="mailto:kontakt@bartekwiktorowicz.com">kontakt@bartekwiktorowicz.com</a>. W miarę dostępności w aplikacji mogą pojawić się również opcje samodzielnego usunięcia konta.</p>
+  <div class="highlight-box">
+    <p>Użytkownik ma prawo do trwałego usunięcia swojego konta oraz wszystkich powiązanych danych. Można tego dokonać na dwa sposoby:</p>
+    <ul>
+      <li><strong>Wewnątrz aplikacji:</strong> Przejdź do sekcji Ustawienia i wybierz opcję „Usuń konto”.</li>
+      <li><strong>Zewnętrzne żądanie (poza aplikacją):</strong> Jeśli nie masz dostępu do aplikacji, możesz złożyć wniosek o usunięcie danych poprzez dedykowany formularz: 
+        <a href="TU_WKLEJ_LINK_DO_TWOJEGO_GOOGLE_FORMS" target="_blank">Wniosek o usunięcie danych (Google Forms)</a>.</li>
+    </ul>
+    <p>Po przetworzeniu wniosku, Twoje konto oraz dane (kupony, statystyki, ustawienia) zostaną bezpowrotnie usunięte z bazy danych Supabase.</p>
+  </div>
 
   <h2>10. Zarządzanie zgodami</h2>
-  <p>W niektórych regionach (np. EOG) wyświetlamy komunikat zgody dotyczący przetwarzania danych do celów reklamowych (personalizacja). Zgody możesz w każdej chwili zmienić lub wycofać – poprzez ustawienia urządzenia, ustawienia reklam Google lub w ramach prezentowanego komunikatu (jeśli jest ponownie dostępny w aplikacji).</p>
+  <p>W niektórych regionach (np. EOG) wyświetlamy komunikat zgody dotyczący przetwarzania danych do celów reklamowych. Zgody możesz zmienić w ustawieniach urządzenia lub aplikacji.</p>
 
   <h2>11. Dzieci</h2>
-  <p>Aplikacja nie jest kierowana do dzieci poniżej 16 roku życia i nie gromadzi świadomie ich danych osobowych.</p>
+  <p>Aplikacja nie jest kierowana do dzieci poniżej 18 roku życia (zgodnie z wyborem grupy docelowej w Google Play) i nie gromadzi świadomie ich danych osobowych.</p>
 
   <h2>12. Zmiany polityki</h2>
-  <p>Możemy aktualizować niniejszą politykę w przypadku zmian prawa lub rozwoju aplikacji. O zmianach poinformujemy poprzez aktualizację treści na tej stronie oraz – jeśli to istotne – w aplikacji.</p>
+  <p>Możemy aktualizować niniejszą politykę. O istotnych zmianach poinformujemy w aplikacji lub na tej stronie.</p>
 
 </body>
 </html>
